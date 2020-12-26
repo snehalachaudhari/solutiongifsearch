@@ -1,0 +1,127 @@
+@import '~font-awesome/css/font-awesome.css';
+
+
+@font-face {
+  font-family: myriadpro-regular;
+  src: url('../../assets/fonts/Myriad\ Pro\ Regular.ttf');
+}
+
+
+
+
+.testmain{
+    font-size: 100%;
+    .header{
+        height: auto;
+        padding: 125px 0 145px;
+        background: rgb(194,89,0);
+        background: linear-gradient(90deg, rgba(194,89,0,1) 0%, rgba(194,89,0,1) 50%, rgba(246,106,0,1) 100%);
+        h1{
+           margin-top: 0;
+            font: 300 4em 'myriadpro-regular', sans-serif;
+            color: #f7f7f7;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .search-container {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            input[type=text] {
+                padding: 6px 0 6px 20px;
+                font: 300 1.1em 'myriadpro-regular';
+                border: none;
+                width: 553px;
+                height: 65px;                
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+              }
+              ::placeholder{
+                  color: #becbd1;
+              }
+              ::-webkit-input-placeholder { /* Edge */
+                color: #becbd1;
+              }
+              
+              :-ms-input-placeholder { /* Internet Explorer */
+                color: #becbd1;
+              }
+              .bthnsearch {
+                padding: 6px 0px;
+                background: #000;
+                font-size: 2em;
+                border: none;
+                height: 77px;
+                color: white;
+                width: 68px;
+                cursor: pointer;
+                position: absolute;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+              }
+
+              .dropdown{
+                position: absolute;
+                display: inline-block;
+                right: 52px;
+                top: 1px;
+                .dropbtn {
+                    background-color: #e2eef4;
+                    color: #a9bec8;
+                    height: 75px;
+                    font-size: 16px;
+                    border: none;
+                    width: 155px;
+                  }
+                  .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    a {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                      }
+                      :hover {background-color: #ddd;}
+                  }
+                  
+              }
+             
+        }
+
+        .subtitle{
+            font: 400 1.8em 'myriadpro-regular', sans-serif;
+            color: #f7f7f7;
+            text-align: center;
+            margin: 70px 0 30px;
+        }
+        .minititle{
+            font: 400 1.1em 'myriadpro-regular', sans-serif;
+            color: #f7f7f7;
+            text-align: center;
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+  .testmain{
+    .header
+    {
+      .search-container{
+        width: 90%;
+        input[type=text]{
+          width: 70%;
+        }
+        .dropdown{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  }
